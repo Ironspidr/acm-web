@@ -1,6 +1,6 @@
-import backdrop from "../assets/img/backdrop_1.jpg";
-import { ComplexNavbar } from "../components/navbar";
-import { Banner } from "../components/banner";
+import backdrop from '../assets/img/backdrop_1.jpg'
+import { ComplexNavbar } from '../components/navbar'
+import { Banner } from '../components/banner'
 
 import {
   Card,
@@ -11,113 +11,136 @@ import {
   Menu,
   MenuHandler,
   MenuList,
-  MenuItem,
-} from "@material-tailwind/react";
+  MenuItem
+} from '@material-tailwind/react'
 
-import branching from "../assets/img/medical story.png";
-import clubs from "../assets/img/home-page-banner.png";
-import aboutus from "../assets/img/aboutUs.jpg";
-import Associates from "../components/associates";
-import { Footer } from "../components/footer";
-export default function Home() {
+import clubs from '../assets/img/home-page-banner.png'
+import aboutus from '../assets/img/aboutUs.jpg'
+import { Footer } from '../components/footer'
+export default function Home () {
   return (
-    <div className="App font-family:league-spartan bg-back-light dark:bg-back-dark">
+    <div className='App font-family:league-spartan bg-back-light dark:bg-back-dark'>
       <div>
-        <header className="App-header pt-5 justify-center">
+        <header className='App-header pt-5 justify-center'>
           <ComplexNavbar />
-          <div className="flex items-center justify-center w-full pt-10">
+          <div className='flex items-center justify-center w-full pt-10'>
             <Banner
-              title="Welcome to Eastvale Innovators"
-              caption="Gearing up for the future!"
+              title='Welcome to UCSC ACM'
+              caption='The Largest Computer Science Community at UCSC'
               Banner={backdrop}
             />
           </div>
         </header>
-        <Associates />
+        <BiCardSection />
+        \
         <ActionItems />
-        {/* <InstaEmbed /> */}
       </div>
       <Footer />
     </div>
-  );
+  )
+}
+function BiCardSection () {
+  return (
+    <div className='dark:text-font-dark text-font-light flex justify-center p-10'>
+      <div className='w-1/2'>
+        <p>
+          We are a student run organization that strives to create a supportive
+          and inclusive community for people of all backgrounds and skill levels
+          who are passionate about computer science to learn and network.
+        </p>
+      </div>
+    </div>
+  )
 }
 
-function ActionItems() {
+function ActionItems () {
   return (
-    <div className="">
-      <h1 className="flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark xxs:items-center">
+    <div className=''>
+      <h1 className='flex justify-center text-3xl p-2 pb-5 font-bold text-font-light dark:text-font-dark xxs:items-center'>
         Learn More
       </h1>
-      <div className="flex justify-center ">
-        <div className="flex lg:flex-row justify-between xxs:w-10 xxs:items-center sm:space-y-10 sm:items-center w-3/4 sm:flex-col xxs:flex-col">
-          <div className="xxs:py-5">
-            <CardDefault
-              header="About Us"
-              desc="Check out how students at the Eastvale STEM Academy & Eleanor Roosevelt High School are gaining real world experiences and gearing up for the future!"
-              dir="/about"
-              timg={aboutus}
-            />
-          </div>
+      <div className='flex justify-center items-center'>
+        <div className='flex lg:flex-col justify-center xxs:w-10 xxs:items-center sm:space-y-10 sm:items-center w-3/4 sm:flex-col xxs:flex-col'>
+          <div className='flex flex-col lg:flex-row items-center'>
+            <div className='xxs:py-5'>
+              <CardDefault
+                header='Slugloop'
+                desc="SlugLoop is UCSC's very own bus tracking app developed and maintained by students. It provides real-time updates on loop and city buses, ensuring students always know when to be at the stop. The app’s features make navigating campus transportation easier, saving time and reducing stress for the university community."
+                dir='/about'
+                but={true}
+              />
+            </div>
 
-          <div className="lg:px-5 xxs:py-5">
-            <CardDefault
-              header="Clubs"
-              desc="Eastvale Innovators are involved in various clubs that work to benefit the students of ERHS and eSTEM as well as the greater eastvale community. Find out more about their various activities."
-              dir="/#/clubs"
-              timg={clubs}
-            />
+            <div className='lg:px-5 xxs:py-5'>
+              <CardDefault
+                header='ACM Hacks'
+                desc='ACM Hacks hosts guest speakers and workshops featuring groups like Google DSC, Santa Cruz AI, SlugCP, and GDA. It’s a great chance to work on exciting projects, win prizes, and explore new tools and ideas in computer science. These workshops provide opportunities to engage with professionals and other passionate students.'
+                dir='/#/clubs'
+                but={true}
+              />
+            </div>
           </div>
+          <div className='flex items-start'>
+            <div className='xxs:py-5'>
+              <CardDefault
+                header='Workshops'
+                desc='We understand how challenging it is to learn skills and technologies beyond what’s taught in class. That’s why we offer various workshops for different computer science career paths. We’ve previously held workshops on coding interview prep, machine learning basics, and building portfolio websites, helping students develop the skills they need.'
+                dir='/about'
+                but={false}
+              />
+            </div>
 
-          <div>
-            <CardMenu
-              header="Projects"
-              desc="Through projects, internship oppurunities, and collaborative experiences, Eastvale Innovators are learning to solve real world problems. "
-              timg={branching}
-            />
+            <div className='lg:px-5 xxs:py-5'>
+              <CardDefault
+                header='ACM Research Lab'
+                desc='This student-led research lab focuses on advancing CS and related research by developing tools, datasets, and compiling literature at UCSC. Each quarter includes a showcase of completed work, allowing students to present their contributions. The lab provides valuable hands-on experience, fostering research skills and collaboration among students.'
+                dir='/#/clubs'
+                but={false}
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-function CardDefault(props) {
+function CardDefault (props) {
   return (
-    <Card className="mt-6 w-96 dark:bg-primary-dark">
-      <CardHeader color="blue-gray" className="h-42">
-        <img src={props.timg} alt="card-image" />
-      </CardHeader>
+    <Card className='mt-6 w-96 dark:bg-primary-dark'>
       <CardBody>
-        <h1 className="text-2xl font-semibold dark:text-font-dark">
+        <h1 className='text-2xl font-semibold dark:text-font-dark'>
           {props.header}
         </h1>
-        <h1 className="dark:text-font-dark">{props.desc}</h1>
+        <h1 className='dark:text-font-dark'>{props.desc}</h1>
       </CardBody>
-      <CardFooter className="pt-0">
-        <a href={props.dir}>
-          <Button color="red">Read More</Button>
-        </a>
-      </CardFooter>
+      {props.but ? (
+        <CardFooter className='pt-0'>
+          <a href={props.dir}>
+            <Button color='red'>Read More</Button>
+          </a>
+        </CardFooter>
+      ) : null}
     </Card>
-  );
+  )
 }
 
-function CardMenu(props) {
+function CardMenu (props) {
   return (
-    <Card className="mt-6 w-96 dark:bg-primary-dark">
-      <CardHeader color="blue-gray" className="relative h-56">
-        <img src={props.timg} alt="card-image" />
+    <Card className='mt-6 w-96 dark:bg-primary-dark'>
+      <CardHeader color='blue-gray' className='relative h-56'>
+        <img src={props.timg} alt='card-image' />
       </CardHeader>
       <CardBody>
-        <h1 className="mb-2 text-2xl text-font-light font-semibold dark:text-font-dark">
+        <h1 className='mb-2 text-2xl text-font-light font-semibold dark:text-font-dark'>
           {props.header}
         </h1>
-        <h1 className="dark:text-font-dark">{props.desc}</h1>
+        <h1 className='dark:text-font-dark'>{props.desc}</h1>
       </CardBody>
-      <CardFooter className="pt-0">
-        <Menu className="bg-back-light dark:bg-primary">
+      <CardFooter className='pt-0'>
+        <Menu className='bg-back-light dark:bg-primary'>
           <MenuHandler>
-            <Button color="red">More Here</Button>
+            <Button color='red'>More Here</Button>
           </MenuHandler>
           <MenuList>
             <MenuItem>
@@ -127,14 +150,14 @@ function CardMenu(props) {
             </MenuItem>
             <MenuItem>
               <a href={props.dir}>
-                <Button color="blue">Mustangs App</Button>
+                <Button color='blue'>Mustangs App</Button>
               </a>
             </MenuItem>
           </MenuList>
         </Menu>
       </CardFooter>
     </Card>
-  );
+  )
 }
 
 // function InstaEmbed() {

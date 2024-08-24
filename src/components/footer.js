@@ -23,7 +23,8 @@ export function Footer() {
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 dark:text-font-dark"
           >
             &copy; {currentYear}{" "}
-            <a href="https://material-tailwind.com/">Eastvale Innovators</a>.
+            <a href="https://www.eastvaleinnovators.org/">Eastvale Innovators</a>.
+            Created by <a href="https://www.nj-web.com/">Nataniel Jayaseelan. </a> 
             All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

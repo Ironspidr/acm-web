@@ -1,7 +1,7 @@
 {
-  "name": "innovators_v2",
+  "name": "acm-web",
   "version": "0.1.0",
-  "homepage": "https://nj-web.com/innovators_v2/",
+  "homepage": "https://nj-web.com/acm-web/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^2.1.3",

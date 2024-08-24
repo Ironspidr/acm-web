@@ -3,6 +3,7 @@ import { Banner } from "../components/banner";
 import backdrop from "../assets/img/backdrop_1.jpg";
 import { Footer } from "../components/footer";
 import Associates from "../components/associates";
+import ThreeCardSplit from "../components/threeCardSplit";
 
 export default function About() {
   return (
@@ -12,29 +13,15 @@ export default function About() {
           <ComplexNavbar />
           <div className="flex items-center justify-center w-full pt-10">
             <Banner
-              title="About Eastvale Innovators"
-              caption="Gearing up for the future!"
+              title="About UCSC ACM"
+              caption=""
               Banner={backdrop}
             />
           </div>
         </header>
-        <Mission
-          title="Our Mission"
-          desc="Eastvale Innovators is a student-led organization that aims to
-            provide students with the resources and opportunities to explore
-            their interests in STEM fields. Our mission is to unite STEM
-            pathways by providing opportunities for the student body by means of
-            solving pressing issues presented by our community through projects
-            and internships."
-          img={backdrop}
-        />
-        <Mission
-          title="Our Vision"
-          desc="Students develop skills with their peers and mentors alike in order to gain valuable real world experiences varying from technical to leadership abilities cultivating competent individuals."
-          img={backdrop}
-        />
+ 
       </div>
-
+      <ThreeCardSplit />
       <Footer />
     </div>
   );
