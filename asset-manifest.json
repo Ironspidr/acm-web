@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/acm-web/static/css/main.aeb2dd49.css",
-    "main.js": "/acm-web/static/js/main.09b10aaa.js",
+    "main.js": "/acm-web/static/js/main.a47d54dd.js",
     "static/js/453.2c1152b9.chunk.js": "/acm-web/static/js/453.2c1152b9.chunk.js",
     "static/media/image.jpg": "/acm-web/static/media/image.e58446bdab675c48f815.jpg",
     "static/media/logo_dark.png": "/acm-web/static/media/logo_dark.0955a582f99cd7114a17.png",
     "index.html": "/acm-web/index.html",
     "main.aeb2dd49.css.map": "/acm-web/static/css/main.aeb2dd49.css.map",
-    "main.09b10aaa.js.map": "/acm-web/static/js/main.09b10aaa.js.map",
+    "main.a47d54dd.js.map": "/acm-web/static/js/main.a47d54dd.js.map",
     "453.2c1152b9.chunk.js.map": "/acm-web/static/js/453.2c1152b9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aeb2dd49.css",
-    "static/js/main.09b10aaa.js"
+    "static/js/main.a47d54dd.js"
   ]
 }
