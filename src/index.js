@@ -24,14 +24,14 @@ export default function App() {
   return (
     <>
       <Routes>
-        <Route path="/acm-web/" element={<Home />} />
-        <Route path="/acm-web/about" element={<About />} />
-        <Route path="/acm-web/team" element={<TeamPage />} />
-        <Route path="/acm-web/*" element={<NoPage />} />
-        <Route path="/acm-web/resources" element={<ResourcesPage />} />
-        <Route path="/acm-web/community" element={<CommunityPage />} />
-        <Route path="/acm-web/contact" element={<ContactPage />} />
-        <Route path="/acm-web/events" element={<EventsPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/team" element={<TeamPage />} />
+        <Route path="*" element={<NoPage />} />
+        <Route path="/resources" element={<ResourcesPage />} />
+        <Route path="/community" element={<CommunityPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/events" element={<EventsPage />} />
       </Routes>
     </>
   );
