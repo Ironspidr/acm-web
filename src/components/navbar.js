@@ -31,13 +31,13 @@ const navListMenuItems = [
     title: 'Our Team',
     description:
       'Meet the passionate group of students and professionals dedicated to advancing computer science education and fostering innovation within our community.',
-    link: '/team'
+    link: '/acm-web/#/team'
   },
   {
     title: 'Our Community',
     description:
       'Join a diverse and vibrant network of learners, creators, and collaborators united by a shared passion for technology and growth.',
-    link: '/community'
+    link: '/acm-web/#/community'
   }
 ]
 
@@ -61,7 +61,7 @@ function NavListMenu () {
         <MenuHandler>
           <Typography
             as='a'
-            href='/#/about'
+            href='/acm-web/#/about'
             variant='small'
             className='font-normal'
           >
@@ -120,17 +120,17 @@ const navListItems = [
   {
     label: 'Events',
     icon: CalendarIcon,
-    link: '/#/events'
+    link: '/acm-web/#/events'
   },
   {
     label: 'Contact',
     icon: UserCircleIcon,
-    link: '/#/contact'
+    link: '/acm-web/#/contact'
   },
   {
     label: 'Resources',
     icon: BookmarkIcon,
-    link: '/#/resources'
+    link: '/acm-web/#/resources'
   }
 ]
 
