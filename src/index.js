@@ -18,6 +18,7 @@ import TeamPage from "./templates/teamPage";
 import NoPage from "./templates/nopage";
 import CommunityPage from "./templates/community";
 import ResourcesPage from "./templates/resources";
+import EventsPage from "./templates/events";
 
 export default function App() {
   return (
@@ -30,6 +31,7 @@ export default function App() {
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/events" element={<EventsPage />} />
       </Routes>
     </>
   );

@@ -1,4 +1,4 @@
-import backdrop from '../assets/img/backdrop_1.jpg'
+import backdrop from '../assets/img/image.jpg'
 import { ComplexNavbar } from '../components/navbar'
 import { Banner } from '../components/banner'
 
@@ -14,8 +14,7 @@ import {
   MenuItem
 } from '@material-tailwind/react'
 
-import clubs from '../assets/img/home-page-banner.png'
-import aboutus from '../assets/img/aboutUs.jpg'
+
 import { Footer } from '../components/footer'
 export default function Home () {
   return (

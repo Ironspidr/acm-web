@@ -1,5 +1,5 @@
 //make a 404 error page
-import backdrop from "../assets/img/backdrop_1.jpg";
+import backdrop from "../assets/img/image.jpg";
 
 
 import { ComplexNavbar } from "../components/navbar";

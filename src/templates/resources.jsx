@@ -1,7 +1,7 @@
 import { ComplexNavbar } from "../components/navbar";
 import { Banner } from "../components/banner";
-import backdrop from "../assets/img/backdrop_1.jpg";
-import gwc from "../assets/img/gwc_outreach.png";
+import backdrop from "../assets/img/image.jpg";
+
 import {
   Tabs,
   TabsHeader,
@@ -27,6 +27,9 @@ export default function ResourcesPage() {
         </header>
       </div>
 
+      <div className="flex justify-center py-5"> 
+        <Footer />
+      </div>
     </div>
   );
 }
