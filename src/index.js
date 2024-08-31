@@ -19,6 +19,7 @@ import NoPage from "./templates/nopage";
 import CommunityPage from "./templates/community";
 import ResourcesPage from "./templates/resources";
 import EventsPage from "./templates/events";
+import Acmhacks from "./templates/acmhacks.jsx";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<TeamPage />} />
+        <Route path="/acmhacks24" element={<Acmhacks />} />
         <Route path="*" element={<NoPage />} />
         <Route path="/resources" element={<ResourcesPage />} />
         <Route path="/community" element={<CommunityPage />} />

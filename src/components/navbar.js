@@ -123,7 +123,7 @@ const navListItems = [
     link: '/acm-web/#/events'
   },
   {
-    label: 'Contact',
+    label: 'ACMHacks 2024',
     icon: UserCircleIcon,
     link: '/acm-web/#/contact'
   },
@@ -211,10 +211,9 @@ export function ComplexNavbar () {
 
         <Button size='sm' variant='text'>
           <a
-            href='https://www.paypal.com/donate/?hosted_button_id=APSEPMV7BPV56'
-            target='_blank'
+            href='/acm-web/#/contact'
           >
-            <span className='dark:text-font-dark'>Donate Now</span>
+            <span className='dark:text-font-dark'>Contact US</span>
           </a>
         </Button>
       </div>
