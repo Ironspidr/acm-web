@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import reportWebVitals from "./reportWebVitals";
+
 
 import {
   BrowserRouter,
@@ -52,5 +52,3 @@ root.render(
     </HashRouter>
   </React.StrictMode>
 );
-
-reportWebVitals();

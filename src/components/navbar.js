@@ -31,13 +31,13 @@ const navListMenuItems = [
     title: 'Our Team',
     description:
       'Meet the passionate group of students and professionals dedicated to advancing computer science education and fostering innovation within our community.',
-    link: '/acm-web/#/team'
+    link: '/team'
   },
   {
     title: 'Our Community',
     description:
       'Join a diverse and vibrant network of learners, creators, and collaborators united by a shared passion for technology and growth.',
-    link: '/acm-web/#/community'
+    link: '/community'
   }
 ]
 
@@ -104,10 +104,12 @@ function NavListMenu () {
           </ul>
         </MenuList>
       </Menu>
-      <MenuItem className='flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden dark:text-white'>
-        <Square3Stack3DIcon className='h-[18px] w-[18px] text-blue-gray-500 dark:text-font-dark' />{' '}
-        Pages
-      </MenuItem>
+      <Link to='/about'>
+        <MenuItem className='flex items-center gap-2 font-medium text-blue-gray-900 lg:hidden dark:text-white'>
+          <Square3Stack3DIcon className='h-[18px] w-[18px] text-blue-gray-500 dark:text-font-dark' />{' '}
+          About
+        </MenuItem>
+      </Link>
       <ul className='ml-6 flex w-full flex-col gap-1 lg:hidden'>
         {renderItems}
       </ul>
